@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThirdViewController.h
 //  GradientColorNav
 //
 //  Created by steven on 2016/12/8.
@@ -8,8 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ThirdViewController : BaseViewController
 
 @end
-

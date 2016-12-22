@@ -1,0 +1,6 @@
+framework module Pods_GradientColorNav {
+  umbrella header "Pods-GradientColorNav-umbrella.h"
+
+  export *
+  module * { export * }
+}
