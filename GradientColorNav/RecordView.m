@@ -57,12 +57,34 @@
     [self.finishButton autoSetDimensionsToSize:CGSizeMake(self.frame.size.width/2, self.frame.size.height/2)];
 }
 
+#pragma mark - record button action
+- (void)clickRecordButton {
+    if ([self.delegate respondsToSelector:@selector(RecordView:didPressedRecordButton:)]) {
+        [self.delegate RecordView:self didPressedRecordButton:self.recordButton];
+    }
+}
+
+#pragma mark - cancel button action
+- (void)clickCancelButton {
+    if ([self.delegate respondsToSelector:@selector(RecordView:didPressedCancelButton:)]) {
+        [self.delegate RecordView:self didPressedCancelButton:self.cancelButton];
+    }
+}
+
+#pragma mark - finish button action
+- (void)clickFinishButton {
+    if ([self.delegate respondsToSelector:@selector(RecordView:didPressedFinishButton:)]) {
+        [self.delegate RecordView:self didPressedFinishButton:self.finishButton];
+    }
+}
+
 #pragma mark - getter for record button
 - (UIButton *)recordButton {
     if (!_recordButton) {
         _recordButton = [[UIButton alloc] init];
         [_recordButton setTitle:@"录音" forState:UIControlStateNormal];
         _recordButton.backgroundColor = [UIColor blueColor];
+        [_recordButton addTarget:self action:@selector(clickRecordButton) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _recordButton;
@@ -105,6 +127,7 @@
         _cancelButton = [[UIButton alloc] init];
         [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
         _cancelButton.backgroundColor = [UIColor greenColor];
+        [_cancelButton addTarget:self action:@selector(clickCancelButton) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _cancelButton;
@@ -116,6 +139,7 @@
         _finishButton = [[UIButton alloc] init];
         [_finishButton setTitle:@"完成" forState:UIControlStateNormal];
         _finishButton.backgroundColor = [UIColor redColor];
+        [_finishButton addTarget:self action:@selector(clickFinishButton) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _finishButton;

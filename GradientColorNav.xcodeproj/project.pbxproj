@@ -28,6 +28,11 @@
 		B0A3BA9D1DF9B7CF00857C3D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3BA9C1DF9B7CF00857C3D /* ThirdViewController.m */; };
 		B0A3BAA41DFA434700857C3D /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3BAA31DFA434700857C3D /* BaseNavigationController.m */; };
 		B0A3BAE61DFA4E7300857C3D /* BaseTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3BAE51DFA4E7300857C3D /* BaseTabBarItem.m */; };
+		B0F9F3FA1E0C341A001D4AAD /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F9F3F71E0C341A001D4AAD /* libmp3lame.a */; };
+		B0F9F3FB1E0C341A001D4AAD /* Mp3Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F3F91E0C341A001D4AAD /* Mp3Recorder.m */; };
+		B0F9F4011E0C34A6001D4AAD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0F9F3FD1E0C34A5001D4AAD /* LICENSE */; };
+		B0F9F4021E0C34A6001D4AAD /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F3FF1E0C34A5001D4AAD /* MSWeakTimer.m */; };
+		B0F9F4031E0C34A6001D4AAD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4001E0C34A5001D4AAD /* README.md */; };
 		E3F1E6EA64E9B017E465D00D /* Pods_GradientColorNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B592E4A3A7C58ACE0FC351C /* Pods_GradientColorNav.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +101,14 @@
 		B0A3BAA31DFA434700857C3D /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		B0A3BAE41DFA4E7300857C3D /* BaseTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarItem.h; sourceTree = "<group>"; };
 		B0A3BAE51DFA4E7300857C3D /* BaseTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarItem.m; sourceTree = "<group>"; };
+		B0F9F3F61E0C341A001D4AAD /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		B0F9F3F71E0C341A001D4AAD /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		B0F9F3F81E0C341A001D4AAD /* Mp3Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mp3Recorder.h; sourceTree = "<group>"; };
+		B0F9F3F91E0C341A001D4AAD /* Mp3Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mp3Recorder.m; sourceTree = "<group>"; };
+		B0F9F3FD1E0C34A5001D4AAD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B0F9F3FE1E0C34A5001D4AAD /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		B0F9F3FF1E0C34A5001D4AAD /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		B0F9F4001E0C34A5001D4AAD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3F1E6EA64E9B017E465D00D /* Pods_GradientColorNav.framework in Frameworks */,
+				B0F9F3FA1E0C341A001D4AAD /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +241,7 @@
 				B08AD05F1DFD265F0096F0BC /* ViewControllers */,
 				B08AD01A1DFAACCC0096F0BC /* Helpers */,
 				B0A3BA601DF9AB8100857C3D /* Supporting Files */,
+				B0F9F3F41E0C3410001D4AAD /* Vendors */,
 				B0A3BA991DF9B4CB00857C3D /* Header.h */,
 				B0A3BA9A1DF9B57300857C3D /* PrefixHeader.pch */,
 			);
@@ -262,6 +277,37 @@
 				B0A3BA871DF9AB8100857C3D /* Info.plist */,
 			);
 			path = GradientColorNavUITests;
+			sourceTree = "<group>";
+		};
+		B0F9F3F41E0C3410001D4AAD /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9F3FC1E0C34A5001D4AAD /* MSWeakTimer */,
+				B0F9F3F51E0C341A001D4AAD /* VoiceLib */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		B0F9F3F51E0C341A001D4AAD /* VoiceLib */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9F3F61E0C341A001D4AAD /* lame.h */,
+				B0F9F3F71E0C341A001D4AAD /* libmp3lame.a */,
+				B0F9F3F81E0C341A001D4AAD /* Mp3Recorder.h */,
+				B0F9F3F91E0C341A001D4AAD /* Mp3Recorder.m */,
+			);
+			path = VoiceLib;
+			sourceTree = "<group>";
+		};
+		B0F9F3FC1E0C34A5001D4AAD /* MSWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9F3FD1E0C34A5001D4AAD /* LICENSE */,
+				B0F9F3FE1E0C34A5001D4AAD /* MSWeakTimer.h */,
+				B0F9F3FF1E0C34A5001D4AAD /* MSWeakTimer.m */,
+				B0F9F4001E0C34A5001D4AAD /* README.md */,
+			);
+			path = MSWeakTimer;
 			sourceTree = "<group>";
 		};
 		B1B9B9A93118B30517E807FC /* Pods */ = {
@@ -387,6 +433,7 @@
 			files = (
 				B0A3BA701DF9AB8100857C3D /* LaunchScreen.storyboard in Resources */,
 				B08AD06A1DFD9AB70096F0BC /* header.jpg in Resources */,
+				B0F9F4011E0C34A6001D4AAD /* LICENSE in Resources */,
 				B0A3BA6D1DF9AB8100857C3D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,16 +508,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A3BA981DF9B47E00857C3D /* SecondViewController.m in Sources */,
+				B0F9F3FB1E0C341A001D4AAD /* Mp3Recorder.m in Sources */,
 				B08977501E0B8C2000C3EB0B /* RecordView.m in Sources */,
 				B0A3BAE61DFA4E7300857C3D /* BaseTabBarItem.m in Sources */,
 				B08AD0681DFD84400096F0BC /* GradientView.m in Sources */,
 				B0A3BAA41DFA434700857C3D /* BaseNavigationController.m in Sources */,
 				B0A3BA681DF9AB8100857C3D /* ViewController.m in Sources */,
+				B0F9F4021E0C34A6001D4AAD /* MSWeakTimer.m in Sources */,
 				B08AD01D1DFAAD210096F0BC /* BaseDataController.m in Sources */,
 				B0A3BA9D1DF9B7CF00857C3D /* ThirdViewController.m in Sources */,
 				B08AD0191DFA9DEC0096F0BC /* UserModel.m in Sources */,
 				B08AD0651DFD26E10096F0BC /* RDPReachability.m in Sources */,
 				B089774D1E0B8A3D00C3EB0B /* RecordViewController.m in Sources */,
+				B0F9F4031E0C34A6001D4AAD /* README.md in Sources */,
 				B0112C391E055B4A004DA8EB /* ScrollTableViewViewController.m in Sources */,
 				B0A3BA951DF9B40F00857C3D /* BaseViewController.m in Sources */,
 				B0A3BA651DF9AB8100857C3D /* AppDelegate.m in Sources */,
@@ -621,6 +671,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GradientColorNav/PrefixHeader.pch";
 				INFOPLIST_FILE = GradientColorNav/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GradientColorNav/Vendors/VoiceLib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaotushuo.GradientColorNav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -635,6 +689,10 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GradientColorNav/PrefixHeader.pch";
 				INFOPLIST_FILE = GradientColorNav/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GradientColorNav/Vendors/VoiceLib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaotushuo.GradientColorNav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
