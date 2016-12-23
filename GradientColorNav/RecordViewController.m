@@ -73,7 +73,15 @@
 - (void)beginRecordVoice
 {
     [self.mp3Recorder startRecord];
+    [self.recordView.recordButton setTitle:@"暂停" forState:UIControlStateNormal];
     self.isRecording = YES;
+    self.recordTime = 0.00;
+    self.recordTimer = [MSWeakTimer scheduledTimerWithTimeInterval:0.01
+                                                      target:self
+                                                    selector:@selector(countVoiceTime)
+                                                    userInfo:nil
+                                                     repeats:YES
+                                               dispatchQueue:dispatch_get_main_queue()];
 
 }
 
@@ -84,6 +92,18 @@
 }
 
 - (void)countVoiceTime {
+    self.recordTime += 0.01;
+    self.recordView.currentTimeLabel.text = [self timeFromTotalSeconds:self.recordTime];
+    [self.recordView.timeSlider setValue:self.recordTime];
+}
+
+#pragma mark - Get min:sec format time from total seconds
+- (NSString *)timeFromTotalSeconds:(CGFloat)totalSeconds {
+    NSInteger min = (int)floorf(totalSeconds/60);
+    NSInteger sec = (int)floorf(totalSeconds-min*60);
+    
+    NSLog(@"%02ld:%02ld", min, sec);
+    return [NSString stringWithFormat:@"%02ld:%02ld", min, sec];
 }
 
 #pragma mark - RecordViewDelegate

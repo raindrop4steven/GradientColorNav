@@ -40,6 +40,8 @@
     
     [self.currentTimeLabel autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.recordButton];
     [self.currentTimeLabel autoPinEdge:ALEdgeLeading toEdge:ALEdgeTrailing ofView:self.recordButton withOffset:10];
+    [self.currentTimeLabel autoSetDimension:ALDimensionWidth toSize:50];
+    [self.currentTimeLabel setBackgroundColor:[UIColor redColor]];
     
     [self.maxTimeLabel autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.recordButton];
     [self.maxTimeLabel autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self withOffset:-10];
@@ -115,7 +117,7 @@
     if (!_timeSlider) {
         _timeSlider = [[UISlider alloc] init];
         _timeSlider.minimumValue = 0;
-        _timeSlider.maximumValue = 5;
+        _timeSlider.maximumValue = 5*60;
     }
     
     return _timeSlider;
