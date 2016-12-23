@@ -87,8 +87,13 @@
 
 - (void)endRecordVoice
 {
-    [_mp3Recorder stopRecord];
-    self.isRecording = NO;
+    NSLog(@"stop record");
+    if (self.recordTimer) {
+        [_mp3Recorder stopRecord];
+        self.isRecording = NO;
+        [self.recordTimer invalidate];
+        self.recordTimer = nil;
+    }
 }
 
 - (void)countVoiceTime {
@@ -155,7 +160,7 @@
 
 - (void)RecordView:(RecordView *)recordView didPressedFinishButton:(UIButton *)finishButton {
     NSLog(@"Finish record");
-    [_mp3Recorder stopRecord];
+    [self endRecordVoice];
 }
 
 #pragma mark - mp3Recorder delegate
