@@ -15,6 +15,7 @@
 #import "RDPReachability.h"
 #import "ScrollTableViewViewController.h"
 #import "RecordViewController.h"
+#import "ExpandTableViewController.h"
 
 
 @interface AppDelegate ()
@@ -41,8 +42,10 @@
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
 
     ScrollTableViewViewController *vc = [[ScrollTableViewViewController alloc] init];
-#endif
+
     RecordViewController *vc = [[RecordViewController alloc] init];
+#endif
+    ExpandTableViewController *vc = [[ExpandTableViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];

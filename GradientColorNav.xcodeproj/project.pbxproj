@@ -33,6 +33,8 @@
 		B0F9F4011E0C34A6001D4AAD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0F9F3FD1E0C34A5001D4AAD /* LICENSE */; };
 		B0F9F4021E0C34A6001D4AAD /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F3FF1E0C34A5001D4AAD /* MSWeakTimer.m */; };
 		B0F9F4031E0C34A6001D4AAD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4001E0C34A5001D4AAD /* README.md */; };
+		B0F9F4451E0D9B7A001D4AAD /* ExpandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */; };
+		B0F9F4481E0D9D3B001D4AAD /* ExpandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4471E0D9D3B001D4AAD /* ExpandTableViewCell.m */; };
 		E3F1E6EA64E9B017E465D00D /* Pods_GradientColorNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B592E4A3A7C58ACE0FC351C /* Pods_GradientColorNav.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,10 @@
 		B0F9F3FE1E0C34A5001D4AAD /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
 		B0F9F3FF1E0C34A5001D4AAD /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
 		B0F9F4001E0C34A5001D4AAD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0F9F4431E0D9B7A001D4AAD /* ExpandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandTableViewController.h; sourceTree = "<group>"; };
+		B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandTableViewController.m; sourceTree = "<group>"; };
+		B0F9F4461E0D9D3B001D4AAD /* ExpandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandTableViewCell.h; sourceTree = "<group>"; };
+		B0F9F4471E0D9D3B001D4AAD /* ExpandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,8 @@
 				B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */,
 				B089774B1E0B8A3D00C3EB0B /* RecordViewController.h */,
 				B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */,
+				B0F9F4431E0D9B7A001D4AAD /* ExpandTableViewController.h */,
+				B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 				B08AD0671DFD84400096F0BC /* GradientView.m */,
 				B089774E1E0B8C2000C3EB0B /* RecordView.h */,
 				B089774F1E0B8C2000C3EB0B /* RecordView.m */,
+				B0F9F4461E0D9D3B001D4AAD /* ExpandTableViewCell.h */,
+				B0F9F4471E0D9D3B001D4AAD /* ExpandTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -508,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A3BA981DF9B47E00857C3D /* SecondViewController.m in Sources */,
+				B0F9F4451E0D9B7A001D4AAD /* ExpandTableViewController.m in Sources */,
 				B0F9F3FB1E0C341A001D4AAD /* Mp3Recorder.m in Sources */,
 				B08977501E0B8C2000C3EB0B /* RecordView.m in Sources */,
 				B0A3BAE61DFA4E7300857C3D /* BaseTabBarItem.m in Sources */,
@@ -521,6 +532,7 @@
 				B08AD0651DFD26E10096F0BC /* RDPReachability.m in Sources */,
 				B089774D1E0B8A3D00C3EB0B /* RecordViewController.m in Sources */,
 				B0F9F4031E0C34A6001D4AAD /* README.md in Sources */,
+				B0F9F4481E0D9D3B001D4AAD /* ExpandTableViewCell.m in Sources */,
 				B0112C391E055B4A004DA8EB /* ScrollTableViewViewController.m in Sources */,
 				B0A3BA951DF9B40F00857C3D /* BaseViewController.m in Sources */,
 				B0A3BA651DF9AB8100857C3D /* AppDelegate.m in Sources */,
