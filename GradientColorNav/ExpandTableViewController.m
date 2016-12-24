@@ -7,6 +7,7 @@
 //
 
 #import "ExpandTableViewController.h"
+#import "ExpandTableViewCell.h"
 
 #define kTableViewCellIdentifier @"kTableViewCellIdentifier"
 
@@ -25,7 +26,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableViewCellIdentifier];
+    [self.tableView registerClass:[ExpandTableViewCell class] forCellReuseIdentifier:kTableViewCellIdentifier];
     [self.view addSubview:self.tableView];
 }
 
@@ -36,7 +37,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableViewCellIdentifier];
+    ExpandTableViewCell *cell = (ExpandTableViewCell *)[tableView dequeueReusableCellWithIdentifier:kTableViewCellIdentifier];
     if (cell) {
         cell.textLabel.text = [NSString stringWithFormat:@"%ld", [indexPath row]];
     }

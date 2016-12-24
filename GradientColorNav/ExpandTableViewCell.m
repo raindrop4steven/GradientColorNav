@@ -13,7 +13,12 @@
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        [self.layer setMasksToBounds:YES];
         [self addSubview:self.controlView];
+        [self.controlView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:40];
+        [self.controlView autoPinEdgeToSuperviewEdge:ALEdgeLeading];
+        [self.controlView autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
+        [self.controlView autoSetDimension:ALDimensionHeight toSize:40];
     }
     
     return self;
