@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B0112C391E055B4A004DA8EB /* ScrollTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */; };
+		B02453C31E136445007C46C2 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B02453C21E136445007C46C2 /* ImageCollectionViewCell.m */; };
+		B02453C61E136453007C46C2 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02453C51E136453007C46C2 /* ImageViewController.m */; };
 		B089774D1E0B8A3D00C3EB0B /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */; };
 		B08977501E0B8C2000C3EB0B /* RecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B089774F1E0B8C2000C3EB0B /* RecordView.m */; };
 		B08AD0191DFA9DEC0096F0BC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B08AD0181DFA9DEC0096F0BC /* UserModel.m */; };
@@ -35,6 +37,8 @@
 		B0F9F4031E0C34A6001D4AAD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4001E0C34A5001D4AAD /* README.md */; };
 		B0F9F4451E0D9B7A001D4AAD /* ExpandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */; };
 		B0F9F4481E0D9D3B001D4AAD /* ExpandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F4471E0D9D3B001D4AAD /* ExpandTableViewCell.m */; };
+		B0F9F46D1E1026E4001D4AAD /* ImagedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F46C1E1026E4001D4AAD /* ImagedLabelViewController.m */; };
+		B0F9F4701E102B16001D4AAD /* myLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9F46F1E102B16001D4AAD /* myLabel.m */; };
 		E3F1E6EA64E9B017E465D00D /* Pods_GradientColorNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B592E4A3A7C58ACE0FC351C /* Pods_GradientColorNav.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		80044A902947E084DB6EBD81 /* Pods-GradientColorNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradientColorNav.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradientColorNav/Pods-GradientColorNav.release.xcconfig"; sourceTree = "<group>"; };
 		B0112C371E055B4A004DA8EB /* ScrollTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTableViewViewController.h; sourceTree = "<group>"; };
 		B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTableViewViewController.m; sourceTree = "<group>"; };
+		B02453C11E136445007C46C2 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		B02453C21E136445007C46C2 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		B02453C41E136453007C46C2 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		B02453C51E136453007C46C2 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		B089774B1E0B8A3D00C3EB0B /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
 		B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		B089774E1E0B8C2000C3EB0B /* RecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordView.h; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 		B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandTableViewController.m; sourceTree = "<group>"; };
 		B0F9F4461E0D9D3B001D4AAD /* ExpandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandTableViewCell.h; sourceTree = "<group>"; };
 		B0F9F4471E0D9D3B001D4AAD /* ExpandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandTableViewCell.m; sourceTree = "<group>"; };
+		B0F9F46B1E1026E4001D4AAD /* ImagedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagedLabelViewController.h; sourceTree = "<group>"; };
+		B0F9F46C1E1026E4001D4AAD /* ImagedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagedLabelViewController.m; sourceTree = "<group>"; };
+		B0F9F46E1E102B16001D4AAD /* myLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myLabel.h; sourceTree = "<group>"; };
+		B0F9F46F1E102B16001D4AAD /* myLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B02453BA1E13638D007C46C2 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				B089774B1E0B8A3D00C3EB0B /* RecordViewController.h */,
+				B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */,
+			);
+			name = Record;
+			sourceTree = "<group>";
+		};
+		B02453BB1E1363A0007C46C2 /* Expand Table */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9F4431E0D9B7A001D4AAD /* ExpandTableViewController.h */,
+				B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */,
+			);
+			name = "Expand Table";
+			sourceTree = "<group>";
+		};
+		B02453BC1E1363B9007C46C2 /* ScollTable */ = {
+			isa = PBXGroup;
+			children = (
+				B0112C371E055B4A004DA8EB /* ScrollTableViewViewController.h */,
+				B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */,
+			);
+			name = ScollTable;
+			sourceTree = "<group>";
+		};
+		B02453BD1E1363D4007C46C2 /* LabelWithImageIcon */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9F46B1E1026E4001D4AAD /* ImagedLabelViewController.h */,
+				B0F9F46C1E1026E4001D4AAD /* ImagedLabelViewController.m */,
+			);
+			name = LabelWithImageIcon;
+			sourceTree = "<group>";
+		};
+		B02453BE1E1363EB007C46C2 /* ZoomTableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				B0A3BA661DF9AB8100857C3D /* ViewController.h */,
+				B0A3BA671DF9AB8100857C3D /* ViewController.m */,
+				B08AD0691DFD9AB70096F0BC /* header.jpg */,
+			);
+			name = ZoomTableHeader;
+			sourceTree = "<group>";
+		};
+		B02453BF1E136415007C46C2 /* ImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				B02453C11E136445007C46C2 /* ImageCollectionViewCell.h */,
+				B02453C21E136445007C46C2 /* ImageCollectionViewCell.m */,
+				B02453C41E136453007C46C2 /* ImageViewController.h */,
+				B02453C51E136453007C46C2 /* ImageViewController.m */,
+			);
+			name = ImageBrowser;
+			sourceTree = "<group>";
+		};
+		B02453C01E13642D007C46C2 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				B0A3BA931DF9B40E00857C3D /* BaseViewController.h */,
+				B0A3BA941DF9B40E00857C3D /* BaseViewController.m */,
+				B0A3BA961DF9B47E00857C3D /* SecondViewController.h */,
+				B0A3BA971DF9B47E00857C3D /* SecondViewController.m */,
+				B0A3BA9B1DF9B7CF00857C3D /* ThirdViewController.h */,
+				B0A3BA9C1DF9B7CF00857C3D /* ThirdViewController.m */,
+				B0A3BAA21DFA434700857C3D /* BaseNavigationController.h */,
+				B0A3BAA31DFA434700857C3D /* BaseNavigationController.m */,
+			);
+			name = Gradient;
+			sourceTree = "<group>";
+		};
 		B08AD01A1DFAACCC0096F0BC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,23 +250,13 @@
 		B08AD05F1DFD265F0096F0BC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B0A3BA661DF9AB8100857C3D /* ViewController.h */,
-				B0A3BA671DF9AB8100857C3D /* ViewController.m */,
-				B0A3BA931DF9B40E00857C3D /* BaseViewController.h */,
-				B0A3BA941DF9B40E00857C3D /* BaseViewController.m */,
-				B0A3BA961DF9B47E00857C3D /* SecondViewController.h */,
-				B0A3BA971DF9B47E00857C3D /* SecondViewController.m */,
-				B0A3BA9B1DF9B7CF00857C3D /* ThirdViewController.h */,
-				B0A3BA9C1DF9B7CF00857C3D /* ThirdViewController.m */,
-				B0A3BAA21DFA434700857C3D /* BaseNavigationController.h */,
-				B0A3BAA31DFA434700857C3D /* BaseNavigationController.m */,
-				B08AD0691DFD9AB70096F0BC /* header.jpg */,
-				B0112C371E055B4A004DA8EB /* ScrollTableViewViewController.h */,
-				B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */,
-				B089774B1E0B8A3D00C3EB0B /* RecordViewController.h */,
-				B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */,
-				B0F9F4431E0D9B7A001D4AAD /* ExpandTableViewController.h */,
-				B0F9F4441E0D9B7A001D4AAD /* ExpandTableViewController.m */,
+				B02453C01E13642D007C46C2 /* Gradient */,
+				B02453BF1E136415007C46C2 /* ImageBrowser */,
+				B02453BE1E1363EB007C46C2 /* ZoomTableHeader */,
+				B02453BD1E1363D4007C46C2 /* LabelWithImageIcon */,
+				B02453BC1E1363B9007C46C2 /* ScollTable */,
+				B02453BB1E1363A0007C46C2 /* Expand Table */,
+				B02453BA1E13638D007C46C2 /* Record */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +272,8 @@
 				B089774F1E0B8C2000C3EB0B /* RecordView.m */,
 				B0F9F4461E0D9D3B001D4AAD /* ExpandTableViewCell.h */,
 				B0F9F4471E0D9D3B001D4AAD /* ExpandTableViewCell.m */,
+				B0F9F46E1E102B16001D4AAD /* myLabel.h */,
+				B0F9F46F1E102B16001D4AAD /* myLabel.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -517,8 +593,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02453C61E136453007C46C2 /* ImageViewController.m in Sources */,
 				B0A3BA981DF9B47E00857C3D /* SecondViewController.m in Sources */,
 				B0F9F4451E0D9B7A001D4AAD /* ExpandTableViewController.m in Sources */,
+				B0F9F4701E102B16001D4AAD /* myLabel.m in Sources */,
 				B0F9F3FB1E0C341A001D4AAD /* Mp3Recorder.m in Sources */,
 				B08977501E0B8C2000C3EB0B /* RecordView.m in Sources */,
 				B0A3BAE61DFA4E7300857C3D /* BaseTabBarItem.m in Sources */,
@@ -531,12 +609,14 @@
 				B08AD0191DFA9DEC0096F0BC /* UserModel.m in Sources */,
 				B08AD0651DFD26E10096F0BC /* RDPReachability.m in Sources */,
 				B089774D1E0B8A3D00C3EB0B /* RecordViewController.m in Sources */,
+				B0F9F46D1E1026E4001D4AAD /* ImagedLabelViewController.m in Sources */,
 				B0F9F4031E0C34A6001D4AAD /* README.md in Sources */,
 				B0F9F4481E0D9D3B001D4AAD /* ExpandTableViewCell.m in Sources */,
 				B0112C391E055B4A004DA8EB /* ScrollTableViewViewController.m in Sources */,
 				B0A3BA951DF9B40F00857C3D /* BaseViewController.m in Sources */,
 				B0A3BA651DF9AB8100857C3D /* AppDelegate.m in Sources */,
 				B0A3BA621DF9AB8100857C3D /* main.m in Sources */,
+				B02453C31E136445007C46C2 /* ImageCollectionViewCell.m in Sources */,
 				B08AD0201DFAAE590096F0BC /* UserDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

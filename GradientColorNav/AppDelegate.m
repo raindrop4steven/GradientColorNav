@@ -16,6 +16,8 @@
 #import "ScrollTableViewViewController.h"
 #import "RecordViewController.h"
 #import "ExpandTableViewController.h"
+#import "ImagedLabelViewController.h"
+#import "ImageViewController.h"
 
 
 @interface AppDelegate ()
@@ -45,7 +47,7 @@
 
     RecordViewController *vc = [[RecordViewController alloc] init];
 #endif
-    ExpandTableViewController *vc = [[ExpandTableViewController alloc] init];
+    ImageViewController *vc = [[ImageViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
