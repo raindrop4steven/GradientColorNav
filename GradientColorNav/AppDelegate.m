@@ -17,7 +17,7 @@
 #import "RecordViewController.h"
 #import "ExpandTableViewController.h"
 #import "ImagedLabelViewController.h"
-#import "ImageViewController.h"
+#import "BTFFaceDetailViewController.h"
 
 
 @interface AppDelegate ()
@@ -47,7 +47,7 @@
 
     RecordViewController *vc = [[RecordViewController alloc] init];
 #endif
-    ImageViewController *vc = [[ImageViewController alloc] init];
+    BTFFaceDetailViewController *vc = [[BTFFaceDetailViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];

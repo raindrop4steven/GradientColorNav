@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00019E61E141B620062D338 /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = B00019E51E141B620062D338 /* UIImage+Scale.m */; };
 		B0112C391E055B4A004DA8EB /* ScrollTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */; };
-		B02453C31E136445007C46C2 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B02453C21E136445007C46C2 /* ImageCollectionViewCell.m */; };
-		B02453C61E136453007C46C2 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02453C51E136453007C46C2 /* ImageViewController.m */; };
+		B05C6CED1E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05C6CEA1E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.m */; };
+		B05C6CEE1E1CF6560028B22C /* BTFFaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05C6CEC1E1CF6560028B22C /* BTFFaceDetailViewController.m */; };
+		B05C6CF21E1CF6750028B22C /* XQPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05C6CF11E1CF6750028B22C /* XQPhotoView.m */; };
 		B089774D1E0B8A3D00C3EB0B /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */; };
 		B08977501E0B8C2000C3EB0B /* RecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B089774F1E0B8C2000C3EB0B /* RecordView.m */; };
 		B08AD0191DFA9DEC0096F0BC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B08AD0181DFA9DEC0096F0BC /* UserModel.m */; };
@@ -63,12 +65,16 @@
 		119676E90531B7AAC202B204 /* Pods-GradientColorNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradientColorNav.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GradientColorNav/Pods-GradientColorNav.debug.xcconfig"; sourceTree = "<group>"; };
 		6B592E4A3A7C58ACE0FC351C /* Pods_GradientColorNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradientColorNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80044A902947E084DB6EBD81 /* Pods-GradientColorNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradientColorNav.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradientColorNav/Pods-GradientColorNav.release.xcconfig"; sourceTree = "<group>"; };
+		B00019E41E141B620062D338 /* UIImage+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
+		B00019E51E141B620062D338 /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
 		B0112C371E055B4A004DA8EB /* ScrollTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTableViewViewController.h; sourceTree = "<group>"; };
 		B0112C381E055B4A004DA8EB /* ScrollTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTableViewViewController.m; sourceTree = "<group>"; };
-		B02453C11E136445007C46C2 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
-		B02453C21E136445007C46C2 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
-		B02453C41E136453007C46C2 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		B02453C51E136453007C46C2 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		B05C6CE91E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFFaceDetailCollectionViewCell.h; sourceTree = "<group>"; };
+		B05C6CEA1E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTFFaceDetailCollectionViewCell.m; sourceTree = "<group>"; };
+		B05C6CEB1E1CF6560028B22C /* BTFFaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFFaceDetailViewController.h; sourceTree = "<group>"; };
+		B05C6CEC1E1CF6560028B22C /* BTFFaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTFFaceDetailViewController.m; sourceTree = "<group>"; };
+		B05C6CF01E1CF6750028B22C /* XQPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQPhotoView.h; sourceTree = "<group>"; };
+		B05C6CF11E1CF6750028B22C /* XQPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQPhotoView.m; sourceTree = "<group>"; };
 		B089774B1E0B8A3D00C3EB0B /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
 		B089774C1E0B8A3D00C3EB0B /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 		B089774E1E0B8C2000C3EB0B /* RecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordView.h; sourceTree = "<group>"; };
@@ -164,6 +170,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B00019E31E141B5A0062D338 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B00019E41E141B620062D338 /* UIImage+Scale.h */,
+				B00019E51E141B620062D338 /* UIImage+Scale.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B00019F81E15EE8C0062D338 /* ZoomImage */ = {
+			isa = PBXGroup;
+			children = (
+				B05C6CE91E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.h */,
+				B05C6CEA1E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.m */,
+				B05C6CEB1E1CF6560028B22C /* BTFFaceDetailViewController.h */,
+				B05C6CEC1E1CF6560028B22C /* BTFFaceDetailViewController.m */,
+				B05C6CEF1E1CF6750028B22C /* PhotoView */,
+			);
+			path = ZoomImage;
+			sourceTree = "<group>";
+		};
 		B02453BA1E13638D007C46C2 /* Record */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,17 +237,6 @@
 			name = ZoomTableHeader;
 			sourceTree = "<group>";
 		};
-		B02453BF1E136415007C46C2 /* ImageBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				B02453C11E136445007C46C2 /* ImageCollectionViewCell.h */,
-				B02453C21E136445007C46C2 /* ImageCollectionViewCell.m */,
-				B02453C41E136453007C46C2 /* ImageViewController.h */,
-				B02453C51E136453007C46C2 /* ImageViewController.m */,
-			);
-			name = ImageBrowser;
-			sourceTree = "<group>";
-		};
 		B02453C01E13642D007C46C2 /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +250,15 @@
 				B0A3BAA31DFA434700857C3D /* BaseNavigationController.m */,
 			);
 			name = Gradient;
+			sourceTree = "<group>";
+		};
+		B05C6CEF1E1CF6750028B22C /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				B05C6CF01E1CF6750028B22C /* XQPhotoView.h */,
+				B05C6CF11E1CF6750028B22C /* XQPhotoView.m */,
+			);
+			path = PhotoView;
 			sourceTree = "<group>";
 		};
 		B08AD01A1DFAACCC0096F0BC /* Helpers */ = {
@@ -251,7 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				B02453C01E13642D007C46C2 /* Gradient */,
-				B02453BF1E136415007C46C2 /* ImageBrowser */,
 				B02453BE1E1363EB007C46C2 /* ZoomTableHeader */,
 				B02453BD1E1363D4007C46C2 /* LabelWithImageIcon */,
 				B02453BC1E1363B9007C46C2 /* ScollTable */,
@@ -322,6 +346,8 @@
 		B0A3BA5F1DF9AB8100857C3D /* GradientColorNav */ = {
 			isa = PBXGroup;
 			children = (
+				B00019F81E15EE8C0062D338 /* ZoomImage */,
+				B00019E31E141B5A0062D338 /* Category */,
 				B08AD0611DFD26900096F0BC /* Models */,
 				B08AD0601DFD267E0096F0BC /* Views */,
 				B08AD05F1DFD265F0096F0BC /* ViewControllers */,
@@ -593,14 +619,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B02453C61E136453007C46C2 /* ImageViewController.m in Sources */,
 				B0A3BA981DF9B47E00857C3D /* SecondViewController.m in Sources */,
+				B00019E61E141B620062D338 /* UIImage+Scale.m in Sources */,
 				B0F9F4451E0D9B7A001D4AAD /* ExpandTableViewController.m in Sources */,
+				B05C6CED1E1CF6560028B22C /* BTFFaceDetailCollectionViewCell.m in Sources */,
 				B0F9F4701E102B16001D4AAD /* myLabel.m in Sources */,
 				B0F9F3FB1E0C341A001D4AAD /* Mp3Recorder.m in Sources */,
 				B08977501E0B8C2000C3EB0B /* RecordView.m in Sources */,
 				B0A3BAE61DFA4E7300857C3D /* BaseTabBarItem.m in Sources */,
 				B08AD0681DFD84400096F0BC /* GradientView.m in Sources */,
+				B05C6CEE1E1CF6560028B22C /* BTFFaceDetailViewController.m in Sources */,
 				B0A3BAA41DFA434700857C3D /* BaseNavigationController.m in Sources */,
 				B0A3BA681DF9AB8100857C3D /* ViewController.m in Sources */,
 				B0F9F4021E0C34A6001D4AAD /* MSWeakTimer.m in Sources */,
@@ -612,11 +640,11 @@
 				B0F9F46D1E1026E4001D4AAD /* ImagedLabelViewController.m in Sources */,
 				B0F9F4031E0C34A6001D4AAD /* README.md in Sources */,
 				B0F9F4481E0D9D3B001D4AAD /* ExpandTableViewCell.m in Sources */,
+				B05C6CF21E1CF6750028B22C /* XQPhotoView.m in Sources */,
 				B0112C391E055B4A004DA8EB /* ScrollTableViewViewController.m in Sources */,
 				B0A3BA951DF9B40F00857C3D /* BaseViewController.m in Sources */,
 				B0A3BA651DF9AB8100857C3D /* AppDelegate.m in Sources */,
 				B0A3BA621DF9AB8100857C3D /* main.m in Sources */,
-				B02453C31E136445007C46C2 /* ImageCollectionViewCell.m in Sources */,
 				B08AD0201DFAAE590096F0BC /* UserDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
