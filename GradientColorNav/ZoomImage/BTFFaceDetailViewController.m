@@ -60,7 +60,12 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     BTFFaceDetailCollectionViewCell *cell = (BTFFaceDetailCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kFaceDetailViewCellIdentifier forIndexPath:indexPath];
     if (cell) {
-        
+        NSString *urlString = @"http://ww4.sinaimg.cn/large/7a8aed7bgw1ev1yplngebj20hs0qogq0.jpg";
+
+        cell.faceImageView = [XQPhotoView photoViewWithFrame:cell.bounds atImageUrlString:urlString];
+        cell.faceImageView.contentMode = UIViewContentModeScaleAspectFit;
+        [cell addSubview:cell.faceImageView];
+        [cell.faceImageView autoPinEdgesToSuperviewEdges];
     }
     return cell;
 }
