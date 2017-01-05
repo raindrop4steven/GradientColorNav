@@ -7,6 +7,7 @@
 //
 
 #import "XQPhotoView.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 /** UIImage分类 */
 @interface UIImage (extension)
@@ -118,10 +119,10 @@
         
         self.delegate = self;
         
-        [self setupImageOfURLString:urlString];
-        
-        [self setup];
-        
+//        [self setupImageOfURLString:urlString];
+        [self.imageView sd_setImageWithURL:[NSURL URLWithString:urlString] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            [self setup];
+        }];
     }
     return self;
 }

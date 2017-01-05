@@ -15,11 +15,10 @@
     self = [super initWithFrame:frame];
     if (self) {
 #if 0
-        NSString *urlString = @"http://ww4.sinaimg.cn/large/7a8aed7bgw1ev1yplngebj20hs0qogq0.jpg";
+//        NSString *urlString = @"http://ww4.sinaimg.cn/large/7a8aed7bgw1ev1yplngebj20hs0qogq0.jpg";
         
         /** 加载网络图片 */
-        self.faceImageView = [XQPhotoView photoViewWithFrame:self.bounds atImageUrlString:urlString];
-        self.faceImageView = [[XQPhotoView alloc] init];
+        self.faceImageView = [XQPhotoView photoViewWithFrame:self.bounds atImageUrlString:self.url];
         self.faceImageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:self.faceImageView];
         [self.faceImageView autoPinEdgesToSuperviewEdges];
