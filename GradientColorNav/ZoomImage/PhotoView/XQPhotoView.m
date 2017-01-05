@@ -107,76 +107,24 @@
 
 #pragma mark - 加载网络图片
 
-+ (instancetype)photoViewWithFrame:(CGRect)frame atImageUrlString:(NSString *)urlString {
-    return [[self alloc] initWithFrame:frame atImageUrlString:urlString];
-}
-
-- (instancetype)initWithFrame:(CGRect) frame atImageUrlString:(NSString *)urlString {
+- (instancetype)initWithFrame:(CGRect) frame{
     
     self = [super initWithFrame:frame];
     
     if (self) {
         
         self.delegate = self;
-        
-//        [self setupImageOfURLString:urlString];
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:urlString] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        self.contentSize = frame.size;
+    }
+    return self;
+}
+
+- (void)setCellImageWithUrl:(NSString *)url {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        dispatch_async(dispatch_get_main_queue(), ^{
             [self setup];
-        }];
-    }
-    return self;
-}
-
-#pragma mark - 根据传入的urlString 设置UIImageView的image
-- (void)setupImageOfURLString:(NSString *)urlString {
-    
-    /** 取得沙盒路径 */
-    NSString *cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    
-    /** 取得图片名 */
-    NSString *imageName = [[urlString lastPathComponent] stringByDeletingPathExtension];
-    
-    /** 取得图片扩展名 */
-    NSString *imageExtension = [urlString pathExtension];
-    
-    /** 先从沙盒中取出图片 */
-    UIImage *image = [UIImage loadImage:imageName ofType:imageExtension inDirectory:cachesDirectory];
-    
-    /** 当图片不存在 */
-    if (!image) {
-        
-        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-        
-        image = [UIImage imageWithData:data];
-        
-        /** 下载图片后存储到沙盒中 */
-        [image saveImage:image atFileName:imageName atImageType:imageExtension atDirectory:cachesDirectory];
-    }
-    
-    self.imageView.image = image;
-    
-}
-
-#pragma mark - 加载本地图片
-
-+ (instancetype)photoViewWithFrame:(CGRect)frame atImageName:(NSString *)imageName {
-    return [[self alloc] initWithFrame:frame atImageName:imageName];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame atImageName:(NSString *)imageName {
-    
-    self = [super initWithFrame:frame];
-    
-    if (self) {
-        
-        self.delegate = self;
-        
-        self.imageView.image = [UIImage imageNamed:imageName];
-        
-        [self setup];
-        
-    }
-    return self;
+        });
+    }];
 }
 
 #pragma mark - 懒加载

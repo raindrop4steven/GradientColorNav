@@ -12,7 +12,6 @@
 
 @interface BTFFaceDetailCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, strong)NSString *url;
 @property (nonatomic, strong)XQPhotoView *faceImageView;
 
 @end

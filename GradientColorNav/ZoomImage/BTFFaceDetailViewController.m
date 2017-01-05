@@ -61,13 +61,7 @@
     BTFFaceDetailCollectionViewCell *cell = (BTFFaceDetailCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kFaceDetailViewCellIdentifier forIndexPath:indexPath];
     if (cell) {
         NSString *urlString = @"http://ww4.sinaimg.cn/large/7a8aed7bgw1ev1yplngebj20hs0qogq0.jpg";
-        XQPhotoView *faceImageView = [XQPhotoView photoViewWithFrame:cell.bounds atImageUrlString:urlString];
-        faceImageView.contentMode = UIViewContentModeScaleAspectFit;
-        faceImageView.tag = 1001;
-        if ([cell viewWithTag:1001] == nil) {
-            [cell addSubview:faceImageView];
-            [cell.faceImageView autoPinEdgesToSuperviewEdges];
-        }
+        [cell.faceImageView setCellImageWithUrl:urlString];
     }
     return cell;
 }
