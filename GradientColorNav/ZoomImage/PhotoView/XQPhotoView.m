@@ -165,7 +165,8 @@
 - (void)setupSubViewsAttribute {
     
     // Fit container view's size to image size
-    CGSize imageSize = self.imageView.contentSize;
+    CGSize imageSize = self.imageView.frame.size;
+    NSLog(@"image size: %f,%f", imageSize.width, imageSize.height);
     self.containerView.frame = CGRectMake(0, 0, imageSize.width, imageSize.height);
     self.imageView.bounds = CGRectMake(0, 0, imageSize.width, imageSize.height);
     self.imageView.center = CGPointMake(imageSize.width / 2, imageSize.height / 2);

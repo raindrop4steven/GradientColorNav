@@ -14,10 +14,10 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.faceImageView = [[XQPhotoView alloc] initWithFrame:self.bounds];
-        self.faceImageView.contentMode = UIViewContentModeScaleAspectFit;
-        
+        self.faceImageView = [[UIImageView alloc] init];
         [self addSubview:self.faceImageView];
+        [self.faceImageView autoPinEdgesToSuperviewEdges];
+        self.faceImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     
     return self;

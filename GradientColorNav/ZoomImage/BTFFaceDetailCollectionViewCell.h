@@ -12,6 +12,7 @@
 
 @interface BTFFaceDetailCollectionViewCell : UICollectionViewCell
 
-@property (nonatomic, strong)XQPhotoView *faceImageView;
+//@property (nonatomic, strong)XQPhotoView *faceImageView;
+@property (nonatomic, strong)UIImageView *faceImageView;
 
 @end
